@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Miffu bonuu ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#ff9ac6,#ff69b4,#ffd6e7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.container{
+    max-width:900px;
+    padding:40px;
+    z-index:2;
+}
+
+h1{
+    font-size:4rem;
+    font-family:'Pacifico',cursive;
+    margin-bottom:15px;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px white;
+    }
+    to{
+        text-shadow:0 0 30px #fff,0 0 60px #ffb6d9;
+    }
+}
+
+.nickname{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff4fa;
+    margin-bottom:20px;
+}
+
+.message{
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:30px;
+    margin-top:20px;
+    line-height:1.9;
+    font-size:1.15rem;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    border-radius:50px;
+    background:white;
+    color:#ff4f9a;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(255,255,255,.5);
+}
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:white;
+    animation:float 8s linear infinite;
+    opacity:.7;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+    }
+}
+
+.footer{
+    margin-top:25px;
+    font-size:1rem;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Happy Birthday 🎂</h1>
+
+    <div class="nickname">
+        Mifrah ❤️ <br>
+        Our Beloved Miffu (bonuu) ✨
+    </div>
+
+    <div class="message">
+        Dear Miffu,
+
+        <br><br>
+
+        Today is all about celebrating the amazing person you are.
+        Your kindness, smile, and beautiful heart make every day brighter.
+        Thank you for being such a wonderful friend and for creating
+        countless unforgettable memories.
+
+        <br><br>
+
+        May this year bring you happiness, success, good health,
+        endless laughter, and everything your heart desires.
+
+        <br><br>
+
+        Keep shining, keep smiling, and keep being the incredible
+        person everyone loves.
+
+        <br><br>
+
+        💖 Happy Birthday Miffu 💖
+    </div>
+
+    <a href="#" class="btn" onclick="showWish()">
+        Click for a Surprise 🎁
+    </a>
+
+    <div class="footer">
+        Made with ❤️ for Miffu
+    </div>
+
+</div>
+
+<script>
+function showWish(){
+    alert("🎉 Happy Birthday Miffu! 🎂\n\nMay all your dreams come true and your smile never fade. 💖");
+}
+
+for(let i=0;i<40;i++){
+    let heart=document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML='💖';
+    heart.style.left=Math.random()*100+'vw';
+    heart.style.fontSize=(Math.random()*25+15)+'px';
+    heart.style.animationDuration=(Math.random()*5+5)+'s';
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
